@@ -10,530 +10,42 @@
 
 
 <body class="bg-slate-100">
-    <section class="bg-white">
-        <div
-            class="flex items-center justify-between py-6 leading-6 text-indigo-900 md:justify-start max-w-[1500px] mx-auto">
-            <div class="flex justify-start text-indigo-900 lg:w-0 lg:flex-1">
-                <a href="https://swoogo.events" class="cursor-pointer" style="text-decoration: underline;">
-                    <span class="sr-only border-solid border-gray-200">Swoogo</span>
-                    <img alt="Swoogo"
-                        src="https://swoogo.events/wp-content/themes/swoogo/images/logos/new-swoogo-logo-orange.svg?1703267890"
-                        class="mt-1 block h-8 max-w-full align-middle" />
-                </a>
+    <section class="bg-red-800">
+        <nav class="py-8 max-w-[1200px] mx-auto flex justify-between align-middle items-center pl-4">
+            <img src="https://assets.swoogo.com/uploads/medium/2688216-64900f0bd209f.png" alt="logo"
+                class='block h-auto leading-5 text-cyan-600 align-middle border-0 cursor-pointer'
+                style="max-height: 35px; max-width: 200px;">
+            <div class="hidden lg:block">
+                <a href="/markethub-asia/3553688"
+                    class="cursor-pointer text-left font-sans text-sm uppercase leading-5 text-white border border-transparent hover:border-white py-4 px-8 rounded-xl"
+                    style="font-weight: bold; list-style: outside none none;">Home</a>
+                <a href="/markethub-asia/3553730"
+                    class="cursor-pointer text-left font-sans text-sm uppercase leading-5 text-white border border-transparent hover:border-white py-4 px-8 rounded-xl"
+                    style="font-weight: bold; list-style: outside none none;">Hosting partner</a>
+                <a href="/markethub-asia/3553731"
+                    class="cursor-pointer text-left font-sans text-sm uppercase leading-5 text-white border border-transparent hover:border-white py-4 px-8 rounded-xl"
+                    style="font-weight: bold; list-style: outside none none;">Sponsors</a>
+                <a href="/markethub-asia/speakers"
+                    class="cursor-pointer text-left font-sans text-sm uppercase leading-5 text-white border border-transparent hover:border-white py-4 px-8 rounded-xl"
+                    style="font-weight: bold; list-style: outside none none;">Speakers</a>
+                <a href="/markethub-asia/gallery"
+                    class="cursor-pointer text-left font-sans text-sm uppercase leading-5 text-white border border-transparent hover:border-white py-4 px-8 rounded-xl"
+                    style="font-weight: bold; list-style: outside none none;">Gallery</a>
             </div>
-            <div class="-my-2 -mr-2 text-indigo-900 md:ml-10 md:mr-0 md:hidden">
-                <button type="button"
-                    class="m-0 inline-flex cursor-pointer items-center justify-center rounded-md bg-white bg-none p-2 text-center normal-case text-gray-400 hover:opacity-75"
-                    aria-expanded="false" @click=" showMobile = true " x-hide="showMobile = true"
-                    style="font-size: 128%;">
-                    <span class="sr-only border-solid border-gray-200">Open menu</span>
-                    <!-- Heroicon name: outline/menu -->
-                    <svg class="block h-6 w-6 align-middle" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="z-index:1">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" class=""></path>
-                    </svg>
-                </button>
+            <div class="lg:hidden">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
             </div>
-            <!-- begin nav items -->
-            <nav class="hidden text-indigo-900 md:ml-10 md:mr-0 md:flex" x-data="{ showFlyout : 'none' }">
-                <div class="relative">
-                    <button type="button"
-                        class="m-0 inline-flex cursor-pointer items-center rounded-md bg-transparent bg-none p-0 text-center text-sm font-semibold normal-case leading-5 hover:opacity-75"
-                        aria-expanded="false" @mouseenter=" showFlyout = 'product' ">
-                        <span class="">Product</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 block h-5 w-5 align-middle"
-                            viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" class=""></path>
-                        </svg>
-                    </button>
-                    <div class="absolute z-10 mt-3 hidden w-64 transform-none rounded-2xl border border-solid border-gray-100 bg-white px-8 pb-5 pt-8 text-base sm:px-8 xl:left-1/2 xl:transform-none"
-                        x-show="showFlyout == 'product' " @mouseleave="showFlyout = false"
-                        x-transition:enter="transition ease-linear duration-200 transform"
-                        x-transition:enter-start="opacity-1 translate-y-1"
-                        x-transition:enter-end="translate-y-0 opacity-100"
-                        x-transition:leave="transition ease-in duration-150 transform"
-                        x-transition:leave-start="translate-y-0 opacity-100 "
-                        x-transition:leave-end="opacity-0 translate-y-1"
-                        style="display: none; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; max-width: 810px;">
-                        <h4 class="m-0 pb-4 font-sans text-xl font-medium leading-7">Capabilities</h4>
-                        <div class="relative grid gap-6 sm:gap-8 lg:grid-cols-2" data-purpose="product-container">
-                            <a href="https://swoogo.events/event-registration-software/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/registration.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Registration</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Easy registration, limitless
-                                        customization, happy attendees.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/data-insights/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/analytics.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Data + Insights</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Get full insight into attendee and
-                                        event engagement.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/event-logistics/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/event-logistics.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Event Logistics</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">All the parts that turn your
-                                        events
-                                        into experiences.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/integrations/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/integrations.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Integrations</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Connect Swoogo to all your
-                                        critical
-                                        business solutions.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/event-marketing/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/marketing.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Event Marketing</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Websites, emails: event marketing
-                                        made
-                                        easy.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/event-hub/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/event-hub.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Event Hub</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Content, agendas, and details in a
-                                        unified location.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/call-for-speakers/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/crowd-of-people.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Call for Speakers</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Collect and review sessions before
-                                        your event.</p>
-                                </div>
-                            </a>
-                            <a href="https://swoogo.events/mobile/"
-                                class="-m-3 flex cursor-pointer items-start rounded-lg p-3 transition"
-                                style="text-decoration: underline;">
-                                <div
-                                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/icons/purple/mobile.svg?1703267890"
-                                        class="block h-auto max-w-full align-middle" />
-                                </div>
-                                <div class="ml-4">
-                                    <p class="m-0 font-semibold leading-4">Mobile</p>
-                                    <p class="mx-0 mb-0 mt-1 leading-5 text-gray-500">Your event in attendees' pockets.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="">
-                            <div class="mt-5 gap-5 border-x-0 border-b-0 border-t border-solid border-gray-200 pt-6 sm:gap-8 md:grid lg:grid-cols-3"
-                                style="border-width: 0px;">
-                                <a href="https://swoogo.events/platform/"
-                                    class="cursor-pointer font-semibold text-indigo-500"
-                                    style="text-decoration: underline;"> Platform Overview → </a>
-                                <a href="https://swoogo.events/enterprise/"
-                                    class="cursor-pointer text-center font-semibold text-indigo-500"
-                                    style="text-decoration: underline;"> Enterprise Ready → </a>
-                                <a href="https://swoogo.events/support/"
-                                    class="cursor-pointer font-semibold text-indigo-500 md:pl-16"
-                                    style="text-decoration: underline;"> In-House Support → </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end .menu-product-->
-
-                <!-- Begin Solutions -->
-                <div class="relative md:ml-10 md:mr-0 lg:ml-10 lg:mr-0">
-                    <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                    <button type="button"
-                        class="m-0 inline-flex cursor-pointer items-center rounded-md bg-transparent bg-none p-0 text-center text-sm font-semibold normal-case leading-5 hover:opacity-75"
-                        aria-expanded="false" @mouseenter=" showFlyout = 'solutions' ">
-                        <span class="">Solutions</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 block h-5 w-5 align-middle"
-                            viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" class=""></path>
-                        </svg>
-                    </button>
-                    <!-- 'Solutions' flyout menu, show/hide based on flyout menu state. -->
-
-                    <div class="absolute z-10 -ml-4 mt-3 hidden w-screen transform-none rounded-2xl border border-solid border-gray-100 bg-white px-8 pb-5 pt-8 text-base sm:px-8 lg:left-1/2 lg:ml-0 lg:transform-none"
-                        style="max-width: 500px; display: none; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;"
-                        x-show="showFlyout == 'solutions' " @mouseleave="showFlyout = false"
-                        x-transition:enter="transition ease-linear duration-200 transform"
-                        x-transition:enter-start="opacity-1 translate-y-1"
-                        x-transition:enter-end="translate-y-0 opacity-100"
-                        x-transition:leave="transition ease-in duration-150 transform"
-                        x-transition:leave-start="translate-y-0 opacity-100 "
-                        x-transition:leave-end="opacity-0 translate-y-1">
-                        <div class="relative grid grid-cols-2 gap-6 sm:gap-8">
-                            <div class="">
-                                <h4 class="m-0 font-sans text-xl font-medium leading-7">By Event Type</h4>
-                                <ul class="m-0 px-0 pb-0 pt-4" style="list-style: none;">
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/in-person-events/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            In-Person Events </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/digital-events/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            Digital Events </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/hybrid-events/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            Hybrid Events </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="">
-                                <h4 class="m-0 font-sans text-xl font-medium leading-7">By Industry</h4>
-                                <ul class="m-0 px-0 pb-0 pt-4" style="list-style: none;">
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/enterprise/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            For Enterprise </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/media/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            For Media </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/agencies/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            For Agencies </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/tech/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            For Tech </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/higher-education/"
-                                            class="relative block cursor-pointer hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            For EDUs </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end Industry container -->
-                        </div>
-                        <!-- end grid -->
-                        <a href="https://swoogo.events/security-compliance/"
-                            class="mt-5 block cursor-pointer border-x-0 border-b-0 border-t border-solid border-gray-200 pt-5 font-semibold text-indigo-500"
-                            style="border-width: 0px; text-decoration: underline;"> Security &amp; Compliance → </a>
-                    </div>
-                </div>
-                <!-- end .menu-solutions-->
-
-                <a href="/pricing"
-                    class="cursor-pointer pt-px text-sm font-semibold leading-5 hover:opacity-75 md:ml-10 md:mr-0 lg:ml-10 lg:mr-0"
-                    @mouseenter="showFlyout = false" style="text-decoration: underline;">Pricing</a>
-
-                <div class="relative md:ml-10 md:mr-0 lg:ml-10 lg:mr-0">
-                    <button type="button"
-                        class="m-0 inline-flex cursor-pointer items-center rounded-md bg-transparent bg-none p-0 text-center text-sm font-semibold normal-case leading-5 hover:opacity-75"
-                        aria-expanded="false" @mouseenter=" showFlyout = 'resources' ">
-                        <span class="">Resources</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 block h-5 w-5 align-middle"
-                            viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" class=""></path>
-                        </svg>
-                    </button>
-                    <!--<div class="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen sm:px-8 flyout-container" -->
-                    <div class="absolute z-10 -ml-4 mt-3 hidden w-screen transform-none rounded-2xl border-0 border-none border-gray-100 bg-white px-8 pb-5 pt-8 text-base sm:px-8 lg:-ml-11 lg:w-64 lg:max-w-none lg:transform-none lg:overflow-hidden lg:border-none lg:pr-0"
-                        style="max-width: 500px; display: none; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;"
-                        x-show="showFlyout == 'resources'"
-                        x-transition:enter="transition ease-linear duration-200 transform"
-                        x-transition:enter-start="opacity-1 translate-y-1"
-                        x-transition:enter-end="translate-y-0 opacity-100"
-                        x-transition:leave="transition ease-in duration-150 transform"
-                        x-transition:leave-start="translate-y-0 opacity-100 "
-                        x-transition:leave-end="opacity-0 translate-y-1" @mouseleave="showFlyout = false">
-                        <div class="relative sm:gap-8 lg:flex lg:gap-0">
-                            <div class="h-full pr-8 lg:w-1/2">
-                                <h4 class="m-0 font-sans text-xl font-medium leading-7">Knowledge Hub</h4>
-                                <ul class="m-0 px-0 pb-0 pt-4" style="list-style: none;">
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/product-updates/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;">
-                                                Product
-                                                Updates </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                See recent features and changes </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/resources/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;">
-                                                Resources
-                                                Hub </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Find, learn, and explore </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/blog/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;"> Blog
-                                            </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Tips, tricks, and a deeper look at all things events </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/case-studies/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;"> Case
-                                                Studies </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Real stories from real users </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="https://developer.swoogo.com/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;"> API
-                                                Reference </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                The nitty-gritty on connecting custom integrations to Swoogo </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="-my-7 -mr-11 hidden h-full w-1/2 bg-violet-100 px-8 pb-20 pt-8 lg:block">
-                                <a href="/case-studies/evia/" class="cursor-pointer"
-                                    style="text-decoration: underline;">
-                                    <img src="https://swoogo.events/wp-content/themes/swoogo/images/temporary/2023/evia-case-study.png?1703267890"
-                                        loading="lazy" class="block h-auto max-w-full rounded-lg align-middle" />
-                                </a>
-                                <a href="/case-studies/evia/" class="cursor-pointer"
-                                    style="text-decoration: underline;">
-                                    <p class="m-0 pt-4 font-bold leading-4 text-indigo-500">CASE STUDY</p>
-                                    <h4 class="m-0 pt-2 font-sans text-xl font-medium leading-7">How Evia improved their
-                                        client events with Swoogo</h4>
-                                    <p class="mx-0 mb-0 mt-2 leading-5">Evia has been a digital content agency for
-                                        thirty
-                                        years – they needed a new event platform that would let them offer a wide range
-                                        of
-                                        customizations.</p>
-                                </a>
-
-                                <a href="/case-studies/evia/" class="mt-3 inline-block cursor-pointer text-indigo-500"
-                                    style="text-decoration: underline;"> See what happened → </a>
-                            </div>
-                            <!-- end promo -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative md:ml-10 md:mr-0 lg:ml-10 lg:mr-0" x-data="wistia">
-                    <button type="button"
-                        class="m-0 inline-flex cursor-pointer items-center rounded-md bg-transparent bg-none p-0 text-center text-sm font-semibold normal-case leading-5 hover:opacity-75"
-                        aria-expanded="false" @mouseenter=" showFlyout = 'about'; loadWistiaScript() ">
-                        <span class="">About</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 block h-5 w-5 align-middle"
-                            viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" class=""></path>
-                        </svg>
-                    </button>
-                    <div class="absolute z-10 -ml-4 mt-3 hidden w-screen transform-none rounded-2xl border-0 border-none border-gray-100 bg-white px-8 pb-5 pt-8 text-base sm:px-8 lg:-ml-11 lg:w-64 lg:max-w-none lg:transform-none lg:overflow-hidden lg:border-none lg:pr-0"
-                        x-show="showFlyout == 'about' " @mouseleave="showFlyout = false"
-                        x-transition:enter="transition ease-linear duration-200 transform"
-                        x-transition:enter-start="opacity-1 translate-y-1"
-                        x-transition:enter-end="translate-y-0 opacity-100"
-                        x-transition:leave="transition ease-in duration-150 transform"
-                        x-transition:leave-start="translate-y-0 opacity-100 "
-                        x-transition:leave-end="opacity-0 translate-y-1"
-                        style="display: none; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; max-width: 450px;">
-                        <div class="relative sm:gap-8 lg:flex lg:gap-0">
-                            <div class="h-full pr-8 lg:w-1/2">
-                                <h4 class="m-0 font-sans text-xl font-medium leading-7">Learn More</h4>
-                                <ul class="m-0 px-0 pb-0 pt-4" style="list-style: none;">
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/company/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;"> About
-                                                Us
-                                            </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Creating powerful experiences for the people you bring together </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/mission/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;"> Our
-                                                Mission &amp; Culture </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Learn what Swoogo's culture stands for. </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/partners/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;">
-                                                Partners
-                                            </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Let's bring people together ... together! </span>
-                                        </a>
-                                    </li>
-                                    <li class="px-0 py-1 text-left" style="list-style: outside none none;">
-                                        <a href="/careers/"
-                                            class="relative block cursor-pointer pt-2 hover:left-px hover:opacity-80"
-                                            style="text-decoration: underline; transition: all 0.2s ease 0s; list-style: outside none none;">
-                                            <span class="block font-bold" style="list-style: outside none none;">
-                                                Careers
-                                            </span>
-
-                                            <span class="block text-sm leading-5"
-                                                style="list-style: outside none none;">
-                                                Come work somewhere that doesn’t feel so work-y! </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="-my-7 -mr-11 hidden h-full w-1/2 bg-orange-400 p-8 text-white lg:block">
-                                <div class="relative px-0 pb-0" style="padding: 64% 0px 0px; position: relative;">
-                                    <div class="absolute left-0 top-0 h-full w-full"
-                                        style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                        <span class="relative inline-block h-full w-full"
-                                            style="display:inline-block;height:100%;position:relative;width:100%"
-                                            id="wistia-4sj6prdp36-1">
-                                            <div id="wistia_41.thumb_container" class="relative h-24 w-24"
-                                                style="position: relative; height: 100px; width: 100px;"></div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <h2 class="mx-0 mb-0 mt-6 font-sans text-xl font-medium leading-7">Bringing People
-                                    Together
-                                </h2>
-                                <p class="mx-0 mb-0 mt-2 leading-5">CEO Chris Sykes on how Swoogo's people-focused
-                                    culture
-                                    is the driving force behind its continued growth.</p>
-
-                                <a href="https://swoogo.events/company/" class="mt-3 inline-block cursor-pointer"
-                                    style="text-decoration: underline;">Learn more → </a>
-                            </div>
-                            <!-- end promo -->
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- end .sg-nav-items -->
-
-            <div class="hidden items-center justify-end text-indigo-900 md:ml-10 md:mr-0 md:flex md:flex-1 lg:w-0"
-                @mouseenter="showFlyout = false">
-                <a href="/request-demo/"
-                    class="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-sm font-bold leading-5 text-white bg-orange-500 hover:bg-orange-600"
-                    style="text-decoration: underline; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;">Book a Demo</a>
-                <a href="https://www.swoogo.com/site/login"
-                    class="ml-8 cursor-pointer whitespace-nowrap text-sm font-semibold leading-5 text-orange-500 hover:opacity-75"
-                    onclick="gtag('event', 'nav_click', { nav_item_name: 'Log In' })"
-                    style="text-decoration: underline;">
-                    Log In </a>
-            </div>
-            <!-- end .sg-nav-actions -->
-        </div>
-
+        </nav>
     </section>
 
     <section class="max-w-[1200px] mx-auto">
-        <h1 class="pb-2 m-0 font-sans text-4xl font-bold text-indigo-900 mt-64" style="line-height: 115%;">
+        <h1 class="pb-2 m-0 font-sans text-4xl font-bold text-indigo-900 mt-52" style="line-height: 115%;">
             Privacy Policy
         </h1>
         <div class="pb-8 leading-6 text-indigo-900">Version: 1.0.1 | <span class="leading-6 text-indigo-900">
@@ -541,139 +53,123 @@
             </span>
         </div>
 
-        <div class="rounded-2xl bg-white p-10 leading-6 text-indigo-900" id="legal-content"
-            style="box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;">
+        <div class="rounded-2xl bg-white p-10 leading-6 text-indigo-900" id="legal-content">
             <p class="m-0 px-0 py-4 text-base leading-7">
-                This
-                <strong class="text-indigo-900" style="font-weight: bolder;">Privacy Notice </strong>describes the
-                information Swoogo LLC (“<strong class="text-indigo-900" style="font-weight: bolder;">Swoogo</strong>”,
-                “<strong class="text-indigo-900" style="font-weight: bolder;">we</strong>”, “<strong
-                    class="text-indigo-900" style="font-weight: bolder;">our</strong>”, or “<strong
-                    class="text-indigo-900" style="font-weight: bolder;">us</strong>”) collects, how we use and retain
-                this information,
-                with whom we share it, and the choices you have in connection with these activities. This Privacy
-                Notice applies to the Swoogo’s websites (<a href="http://swoogo.com" class="cursor-pointer"
-                    style="text-decoration: underline;">swoogo.com</a>
-                and
-                <a href="http://swoogo.events" class="cursor-pointer"
-                    style="text-decoration: underline;">swoogo.events</a>) (collectively, the “<strong
-                    class="text-indigo-900" style="font-weight: bolder;">Website</strong>”), our internet-based
-                event management software (“<strong class="text-indigo-900" style="font-weight: bolder;">Event
-                    Management Software</strong>”), and our mobile applications (“<strong class="text-indigo-900"
-                    style="font-weight: bolder;">Mobile Apps</strong>”), owned and controlled by Swoogo
-                (collectively, our “<strong class="text-indigo-900" style="font-weight: bolder;">Services</strong>”).
+                In accordance with applicable data protection regulations, this Privacy Policy is intended to help you
+                understand the following.
+
+                This Privacy Policy (hereinafter "the Policy" or “Privacy policy”) describes the methods of collection,
+                use and transfer by of the personal data that you provide to us or that we obtain or generate when you
+                access our websites, platforms or apps (hereinafter “the Platforms”).
+
+                This Policy does not apply to online resources and third-party sites to which the Platforms are linked
+                and for which HOTELBEDS controls neither the content nor the compliance of data protection regulations.
+                Data subjects who decide to access the aforementioned sites are therefore advised to consult the legal
+                texts available on these sites.
             </p>
 
             <p class="m-0 px-0 py-4 text-base leading-7">
-                <strong class="text-indigo-900" style="font-weight: bolder;">1. OUR ROLE IN DATA PROCESSING</strong>
+                <strong class="text-indigo-900" style="font-weight: bolder;">1. DATA CONTROLLER </strong>
             </p>
 
-            <p class="m-0 px-0 py-4 text-base leading-7">For residents of the European Economic Area (“<strong
-                    class="text-indigo-900" style="font-weight: bolder;">EEA</strong>”) and United Kingdom (“<strong
-                    class="text-indigo-900" style="font-weight: bolder;">UK</strong>”), the entity responsible for
-                the collection and use (processing) of your personal data is Swoogo Solutions Limited. You can
-                contact Swoogo’s Data Protection Officer by email at <a href="mailto:privacy@swoogo.com"
-                    class="cursor-pointer" style="text-decoration: underline;">privacy@swoogo.com</a>, or mail in
-                the US at 1925 Century Park East, Suite 1700, Los Angeles, CA 90067, USA, or in the UK, at
-                International House, 64 Nile Street, London, N17SR, United Kingdom. Under the UK General Data
-                Protection Regulation and/or EU General Data Protection Regulation (collectively, “<strong
-                    class="text-indigo-900" style="font-weight: bolder;">GDPR</strong>” or “<strong
-                    class="text-indigo-900" style="font-weight: bolder;">EU data protection law</strong>”), Swoogo
-                is a processor in relation to its processing of personal data on behalf of its customers through the
-                Event Management Software and Mobile Apps, and a controller in relation to its processing of
-                personal data through the Website. As used in this Privacy Notice, the term “personal information”
-                includes the term “personal data” as defined under EU data protection law.</p>
+            <p class="m-0 px-0 py-4 text-base leading-7">The Data Controller for the processing of the personal data you
+                have provided us is Hotelbeds Spain, S.L.U. (hereinafter "HOTELBEDS"), with registered office at Camí
+                Son Fangos, 100, Palma de Mallorca.</p>
 
             <p id="data-collection" class="m-0 px-0 py-4 text-base leading-7">
-                <strong class="text-indigo-900" style="font-weight: bolder;">2. PERSONAL INFORMATION WE COLLECT, HOW
-                    WE USE IT, HOW LONG WE KEEP IT, AND HOW WE SHARE IT</strong>
+                <strong class="text-indigo-900" style="font-weight: bolder;">2. DATA PROTECTION OFFICER</strong>
             </p>
 
-            <p class="m-0 px-0 py-4 text-base leading-7">When you interact with our Services, we collect your
-                personal information. Personal information is information that identifies, relates to, describes, is
-                capable of being associated with, or could reasonably be linked, directly or indirectly, with a
-                particular individual or household.</p>
-
-            <p class="m-0 px-0 py-4 text-base leading-7">
-                <strong class="text-indigo-900" style="font-weight: bolder;">A. When you engage in our Event
-                    Management Software (including the Mobile Apps) as an end user of our customer</strong>
+            <p class="m-0 px-0 py-4 text-base leading-7">You can get in contact with our Data Protection Officer in the
+                following email address dataprotection@hotelbeds.com or at our postal address, mentioned in the
+                paragraph above. </p>
+            <p id="data-collection" class="m-0 px-0 py-4 text-base leading-7">
+                <strong class="text-indigo-900" style="font-weight: bolder;">3. HOW DID WE OBTAIN YOUR DATA?</strong>
             </p>
 
-            <p class="m-0 px-0 py-4 text-base leading-7">When we collect your personal information through the Event
-                Management Software on behalf of our customer, we are acting as a Service Provider under the
-                California Privacy Rights Act (“CPRA”) and a Processor under EU data protection laws or other US
-                state comprehensive privacy laws (as applicable). We process and retain your personal information in
-                accordance with the data processing agreement in place with our customer. Our agreements with our
-                customers prohibit us from using that information, except as necessary to provide and improve the
-                Event Management Software, as permitted by this Privacy Notice and applicable law.</p>
+            <p class="m-0 px-0 pt-4 pb-2 text-base leading-7">The personal data processed shall be those that you
+                provide to
+                us through the various channels that HOTELBEDS makes available to you, for example, through the forms
+                available. </p>
+            <p class="m-0 px-0 pb-4 pt-2 text-base leading-7">Also, when you visit the HOTELBEDS site various
+                technologies
+                are used to collect and store information and this may include the use of cookies or similar
+                technologies to identify your browser or device. HOTELBEDS also uses these technologies to collect and
+                store information when you interact with services offered by HOTELBEDS or other features. You can obtain
+                more information about how HOTELBEDS process personal data obtained through cookies or as a result of
+                your browsing in the event that you accept the installation of cookies on the platform (for more
+                information about cookies on the Website, <a href="https://www.hbxgroup.com/cookies.html"
+                    class="text-red-800">visit our
+                    Cookies Policy</a>).</p>
+            <p id="data-collection" class="m-0 px-0 py-4 text-base leading-7">
+                <strong class="text-indigo-900" style="font-weight: bolder;">4. WHAT PERSONAL DATA DO WE PROCESS, FOR
+                    WHAT PURPOSE AND FOR WHAT REASON</strong>
+            </p>
 
-            <p class="m-0 px-0 py-4 text-base leading-7">Where Swoogo processes your personal information in the
-                capacity of a data processor/service provider, and you seek to submit a privacy rights request, we
-                will provide your request to our customer (or the ultimate data controller), or you can contact them
-                directly and we will cooperate with the customer to facilitate your request.</p>
+            <p class="m-0 px-0 pt-4 pb-2 text-base leading-7">These purposes are listed below, indicating which data
+                shall be processed (type of data) and for what reason or on what basis (legal basis). The processing
+                listed below applies to all categories of data subjects who are affected by it, unless otherwise
+                specified. Likewise, we may also process any additional data that you provide us with or that is
+                generated in the course of your relationship with HOTELBEDS for the purposes set out above.</p>
 
-            <p class="m-0 px-0 py-4 text-base leading-7">We will collect your personal information when you:</p>
+            <p id="data-collection" class="m-0 px-0 py-4 text-base leading-7">
+                <strong class="text-indigo-900" style="font-weight: bolder;">EVENT REGISTRATION</strong>
+            </p>
+            <p id="data-collection" class="m-0 px-0 text-base leading-7">
+                <strong class="text-indigo-900" style="font-weight:700;">TYPE OF DATA</strong>
+            </p>
 
-            <ul class="m-0 list-disc py-0 pl-4 pr-0 text-base leading-7" style="list-style: none;">
-                <li class="m-0 px-0 py-4 text-left">
-                    <strong class="text-indigo-900" style="font-weight: bolder;">Register for the Mobile App and/or
-                        Event Management Software.</strong>
-                    When you use the Event Management Software and/or Mobile App, we will collect your registration
-                    information, which includes your personal identifiers (name, email address, telephone number),
-                    limited health information needed to safely provide the customer’s event (food allergies or
-                    preferences, mobility requirements), and any other information requested by the customer
-                    (subject to certain restrictions related to certain sensitive categories of personal
-                    information). We will use this information on behalf of our customer, to register you for the
-                    event, communicate with you regarding the event, and provide you with materials and logistics
-                    for the event.&nbsp; We share this information with our customer, and any integrated third-party
-                    service provider being used by our customer to provide additional functionality and services.
+            <p class="m-0 px-0 pt-2 pb-2 text-base leading-7">Those requested in each personal data collection form and
+                at least the following: </p>
+
+            <ul class="m-0 list-disc py-0 pl-20 pr-0 text-base leading-7">
+                <li class="m-0 px-0 py-2 text-left">
+                    Identification data: name, surname, passport number.
                 </li>
 
-                <li class="m-0 px-0 py-4 text-left">
-                    <strong class="text-indigo-900" style="font-weight: bolder;">When you utilize Chat
-                        Functionality.</strong>
-                    When you use our Chat functionality to network and direct message with other event attendees, we
-                    collect your personal identifiers (name), and any information you include in your communication
-                    with event attendees. We share this information with our third party chat provider to facilitate
-                    the chat functionality.&nbsp;&nbsp;
+                <li class="m-0 px-0 py-2 text-left">
+                    Contact data: e-mail.
                 </li>
 
-                <li class="m-0 px-0 py-4 text-left">
-                    <strong class="text-indigo-900" style="font-weight: bolder;">Log In to the Mobile App.</strong>
-                    When you log in to the Mobile App, we will collect your personal identifiers (email and
-                    password). We will use this information to authenticate you to your account.&nbsp;
+                <li class="m-0 px-0 py-2 text-left">
+                    Data on food intolerance and allergies, and disabilities.
                 </li>
 
-                <li class="m-0 px-0 py-4 text-left">
-                    <strong class="text-indigo-900" style="font-weight: bolder;">Log In to your account.</strong>
-                    When you log in to your account through the Website, we will collect from you your identifiers
-                    (email address and password). We will use this information to authenticate you to your
-                    account.&nbsp;
+                <li class="m-0 px-0 py-2 text-left">
+                    Data related to the request or application provided by the user.
                 </li>
 
-                <li class="m-0 px-0 py-4 text-left">
-                    <strong class="text-indigo-900" style="font-weight: bolder;">When you opt-out of marketing
-                        emails from our customer.</strong>
-                    When we receive your opt-out from receiving marketing communications from our customer, we
-                    collect your identifiers (name and email address), and share them with our customer for our
-                    customer to process your opt-out request.
-                </li>
-
-                <li class="m-0 px-0 py-4 text-left">
-                    <strong class="text-indigo-900" style="font-weight: bolder;">Automatic Data Collection.
-                    </strong>In addition to the personal information identified above, when you use the Mobile Apps,
-                    we and our third-party provider collect your internet and other electronic network activity (IP
-                    Address, Operating System, device model, geography and advertising ID) via SDKs to make the
-                    Mobile Apps work as you expect.&nbsp; Some of the SDKs we use will store and retrieve
-                    information on your device, like a cookie or other similar tracker would.
-                    <ul class="m-0 py-0 pl-4 pr-0 text-indigo-900" style="list-style: none;">
-                        <li class="m-0 px-0 py-4"><strong class="" style="font-weight: bolder;">Essential
-                                SDKs</strong>.&nbsp; We use essential SDKs which are necessary for the Mobile App to
-                            function. If you do not provide this information, we would not be able to provide the
-                            Mobile App.&nbsp;</li>
-                    </ul>
+                <li class="m-0 px-0 py-2 text-left">
+                    Flight information.
                 </li>
             </ul>
+
+            <p id="data-collection" class="m-0 px-0 text-base leading-7">
+                <strong class="text-indigo-900" style="font-weight:700;">PURPOSE</strong>
+            </p>
+
+            <p class="m-0 px-0 pt-4 text-base leading-7">Respond to the request for registration in the event as
+                well as all questions related to this and requests, queries or complaints through the sections and
+                contact forms on the Platform or through other channels such as email for general information on the
+                Platform</p>
+            <p class="m-0 px-0 text-base leading-7">In addition, to provide you with tools to follow-up your
+                events requests, such an agenda.</p>
+            <p class="m-0 px-0 text-base leading-7">Also, your data on intolerance and allergies shall be
+                processed for the purposes of meal planning and attention to your needs in the case of having any
+                dietary restrictions.</p>
+            <p class="m-0 px-0 pb-4 text-base leading-7">The data for the flight information shall be processed in
+                order to organize the proper transfers from the airport to the hotel.</p>
+
+            <p id="data-collection" class="m-0 px-0 text-base leading-7">
+                <strong class="text-indigo-900" style="font-weight:700;">LEGAL BASIS</strong>
+            </p>
+            <p class="m-0 px-0 pt-4 text-base leading-7">The processing of your personal data related to the management
+                of the registration to the event is legitimate as it is necessary to comply with the contractual or
+                pre-contractual obligations arising from the relationship between HOTELBEDS and you.</p>
+            <p class="m-0 px-0 text-base leading-7">When complaint forms are used, it shall be based on the legal
+                obligation in accordance with the regulations for the defense of consumers and users.</p>
+            <p class="m-0 px-0 text-base leading-7">Also, your data on intolerance and allergies shall be processed
+                on the basis of the formulation, exercise or defense of claims, if necessary.</p>
 
             <p class="m-0 px-0 py-4 text-base leading-7">
                 <strong class="text-indigo-900" style="font-weight: bolder;">B. When you interact with us as a
